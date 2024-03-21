@@ -2,7 +2,7 @@
 
 Exercises
 
-1. Add a color.
+1. Add a color. 
 2. Complete circle.
 3. Complete rectangle.
 4. Complete triangle.
@@ -39,12 +39,22 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end."""
-    pass  # TODO
+
 
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    pass  # TODO
+    up ()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    for count in range (2):
+        forward(end.x - start.x)
+        left(90)
+        forward(end.y - start.y)
+        left(90)
+
+    end_fill()
 
 
 def triangle(start, end):
